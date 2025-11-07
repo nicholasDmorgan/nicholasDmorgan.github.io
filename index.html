@@ -24,6 +24,7 @@
             'gh-green': '#3fb950',
             'gh-gray': '#21262d',
             'gh-border': '#30363d',
+            'gh-yellow': '#e3b341', /* New color for academic section */
           }
         }
       }
@@ -31,6 +32,11 @@
   </script>
 </head>
 <body class="p-4 md:p-8 min-h-screen">
+
+  <!-- DEBUG CHECK: If you see this, the new file has loaded! -->
+  <div class="bg-red-700 text-white text-center py-2 mb-8 rounded-lg font-bold">
+    DEBUG CHECK: If you see this message, you are viewing the most recent file version!
+  </div>
 
   <div class="max-w-4xl mx-auto space-y-12">
 
@@ -42,10 +48,33 @@
       </p>
     </header>
 
-    <!-- Projects Section -->
+    <!-- Academic Projects Section (New Section) -->
+    <section>
+        <h2 class="text-3xl font-semibold border-b border-gh-border pb-3 mb-6 text-gh-yellow">
+            Academic & Design Projects
+        </h2>
+
+        <div class="space-y-6">
+            <!-- New Project: Design-Build-Fly (DBF) -->
+            <div class="project bg-gh-gray p-6 rounded-xl shadow-lg border border-gh-border transition duration-300 hover:border-gh-yellow transform hover:scale-[1.01]">
+                <h3 class="text-2xl font-bold mb-2 text-white flex items-center">
+                    <!-- Icon representing education/cap -->
+                    <svg class="w-6 h-6 mr-3 text-gh-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a2 2 0 000-3.156L12 7l-6.16 3.422a2 2 0 000 3.156L12 17z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14v7"></path></svg>
+                    Design-Build-Fly (DBF) Competition
+                </h3>
+                <p class="text-gray-400">
+                    Lead structural team for university team's entry into the annual SAE DBF competition. Optimized wing structure for payload capacity using FEA and designed custom carbon fiber components.
+                </p>
+            </div>
+            
+            <!-- You can add more academic projects here later! -->
+        </div>
+    </section>
+
+    <!-- Projects Section (In Progress) -->
     <section>
       <h2 class="text-3xl font-semibold border-b border-gh-border pb-3 mb-6 text-gh-green">
-        Projects (In Progress)
+        Personal Projects (In Progress)
       </h2>
 
       <!-- Project Grid -->
@@ -81,11 +110,11 @@
       <h2 class="text-3xl font-semibold mb-4 text-gh-green">Contact</h2>
       <p class="text-lg">
         <span class="font-medium text-white">Email:</span>
-        <a href="mailto:your.email@example.com" class="text-gh-blue hover:underline">your.email@example.com</a>
+        <a href="mailto:your.email@example.com" class="text-gh-blue hover:underline">nichdmorgan01@gmail.com</a>
       </p>
       <p class="text-lg mt-2">
         <span class="font-medium text-white">GitHub:</span>
-        <a href="#" class="text-gh-blue hover:underline">github.com/yourusername</a>
+        <a href="#" class="text-gh-blue hover:underline">github.com/nicholasDmorgan</a>
       </p>
     </section>
 
@@ -93,5 +122,3 @@
 
 </body>
 </html>
-
-
