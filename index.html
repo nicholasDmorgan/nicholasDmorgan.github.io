@@ -56,7 +56,7 @@
 
         <div class="space-y-6">
             <!-- Project: RC Propeller Vehicle Structural Design Project -->
-            <div class="project bg-gh-gray p-6 rounded-xl shadow-lg border border-gh-border transition duration-300 hover:border-gh-yellow transform hover:scale-[1.01]">
+            <div class="project bg-gh-gray p-6 rounded-xl shadow-lg border border-gh-border transition duration-300 hover:border-gh-yellow transform hover:scale-[1.01] overflow-hidden">
                 <h3 class="text-2xl font-bold mb-2 text-white flex items-center">
                     <!-- Icon representing education/cap -->
                     <svg class="w-6 h-6 mr-3 text-gh-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a2 2 0 000-3.156L12 7l-6.16 3.422a2 2 0 000 3.156L12 17z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14v7"></path></svg>
@@ -88,7 +88,8 @@
                         </div>
 
                         <!-- Slot 2: Responsive Video Embed (Fixed for responsiveness) -->
-                        <div class="relative pt-[56.25%]">
+                        <!-- Added w-full and overflow-hidden for belt-and-suspenders containment -->
+                        <div class="relative pt-[56.25%] w-full overflow-hidden">
                             <!-- Fixed: Removed fixed width/height and added responsive Tailwind classes -->
                             <iframe 
                                 class="absolute inset-0 w-full h-full rounded-lg"
