@@ -55,12 +55,12 @@
         </h2>
 
         <div class="space-y-6">
-            <!-- Project: RC Propeller Vehicle Structural Design Project (NOW WITH LIVE PHOTO/VIDEO PLACEHOLDERS) -->
+            <!-- Project: RC Propeller Vehicle Structural Design Project -->
             <div class="project bg-gh-gray p-6 rounded-xl shadow-lg border border-gh-border transition duration-300 hover:border-gh-yellow transform hover:scale-[1.01]">
                 <h3 class="text-2xl font-bold mb-2 text-white flex items-center">
                     <!-- Icon representing education/cap -->
                     <svg class="w-6 h-6 mr-3 text-gh-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a2 2 0 000-3.156L12 7l-6.16 3.422a2 2 0 000 3.156L12 17z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14v7"></path></svg>
-                    Design Build Fly Drexel University MEM 425 
+                    Design Build Fly Drexel University MEM 425
                 </h3>
                 <p class="text-gray-400 mb-4">
                     Focused on the structural design and optimization of the wing and tail components for a propeller-driven, remote-controlled vehicle as part of an academic course project. **(See flight video and structural analysis documentation below.)**
@@ -73,25 +73,32 @@
                     <!-- Placeholder for 1 Photo and 1 Video - Now using a responsive 2-column grid -->
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                         
-                        <!-- Slot 1: Single Photo (Placeholder added) -->
+                        <!-- Slot 1: Single Photo (Placeholder fixed) -->
                         <div class="bg-gray-700 h-48 flex items-center justify-center rounded-lg border border-dashed border-gray-500 overflow-hidden">
                             <!-- 
-                                *** ACTION REQUIRED: REPLACE THE SRC BELOW WITH YOUR ACTUAL IMAGE URL ***
-                                (I used a generic placeholder image for display purposes)
+                                *** ACTION REQUIRED: PLEASE VERIFY THIS IMAGE URL STRUCTURE. ***
+                                The 'refs/heads/' part was removed, which was breaking the link. 
+                                Format should be: https://raw.githubusercontent.com/{user}/{repo}/{branch}/{file}
                             -->
                             <img 
-                                src="https://raw.githubusercontent.com/nicholasDmorgan/nicholasDmorgan.github.io/refs/heads/main/TheHotMess.jpg" 
+                                src="https://raw.githubusercontent.com/nicholasDmorgan/nicholasDmorgan.github.io/main/TheHotMess.jpg" 
                                 alt="RC Vehicle Photo Placeholder" 
                                 class="w-full h-full object-cover p-4"
                                 onerror="this.onerror=null; this.src='https://placehold.co/400x300/4F46E5/FFFFFF?text=Image+Load+Error';"/>
                         </div>
 
-                        <!-- Slot 2: Responsive Video Embed (YouTube link added) -->
+                        <!-- Slot 2: Responsive Video Embed (Fixed for responsiveness) -->
                         <div class="relative pt-[56.25%]">
-            
-                    
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Fo78sLRUs3s?si=ftbkYFUjBDCFRvKq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                          
+                            <!-- Fixed: Removed fixed width/height and added responsive Tailwind classes -->
+                            <iframe 
+                                class="absolute inset-0 w-full h-full rounded-lg"
+                                src="https://www.youtube.com/embed/Fo78sLRUs3s?si=ftbkYFUjBDCFRvKq" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                referrerpolicy="strict-origin-when-cross-origin" 
+                                allowfullscreen>
+                            </iframe>
                         </div>
                     </div>
                     
@@ -159,5 +166,3 @@
 
 </body>
 </html>
-
-
