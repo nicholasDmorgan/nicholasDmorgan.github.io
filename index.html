@@ -13,6 +13,19 @@
         background-color: #0d1117; /* GitHub dark background */
         color: #c9d1d9; /* Light gray text */
     }
+    .photo-slot {
+        background-color: #161b22;
+        border: 1px dashed #30363d;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        transition: border-color 0.3s ease;
+    }
+    .photo-slot:hover {
+        border-color: #f0883e;
+    }
   </style>
   <script>
     // Customizing Tailwind colors to match a professional dark theme
@@ -25,7 +38,8 @@
             'gh-gray': '#21262d',
             'gh-border': '#30363d',
             'gh-yellow': '#e3b341',
-            'gh-purple': '#bc8cff', /* Added for the personal interests section */
+            'gh-orange': '#f0883e', 
+            'gh-purple': '#bc8cff',
           }
         }
       }
@@ -40,7 +54,7 @@
     <header class="text-center md:text-left border-b border-gh-border pb-6">
       <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-2">Hi, I'm Nicholas Morgan</h1>
       <p class="text-xl text-gh-blue">
-        Mechanical Engineer interested in designing things that solve problems. Currently studying for the FE Mechanical Engineering Exam.
+        Mechanical Engineer interested in aircraft, rockets, and orbital mechanics.
       </p>
     </header>
 
@@ -58,29 +72,18 @@
                     Design Build Fly Drexel University MEM 425
                 </h3>
                 <p class="text-gray-400 mb-4">
-                    Focused on the structural design and optimization of the wing and tail components for a propeller-driven, remote-controlled vehicle as part of an academic course project. **(See flight video below.)**
+                    Focused on the structural design and optimization of the wing and tail components for a propeller-driven, remote-controlled vehicle.
                 </p>
 
                 <div class="mt-6 border-t border-gh-border pt-4">
                     <h4 class="text-xl font-bold text-white mb-3">Project Visuals & Flight</h4>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                        <div class="bg-gray-700 h-48 flex items-center justify-center rounded-lg border border-dashed border-gray-500 overflow-hidden">
-                            <img 
-                                src="https://raw.githubusercontent.com/nicholasDmorgan/nicholasDmorgan.github.io/main/TheHotMess.jpg" 
-                                alt="RC Vehicle" 
-                                class="w-full h-full object-cover p-4"
-                                onerror="this.onerror=null; this.src='https://placehold.co/400x300/4F46E5/FFFFFF?text=Image+Load+Error';"/>
+                        <div class="photo-slot h-48">
+                            <!-- Update with your RC plane photo URL -->
+                            <img src="https://raw.githubusercontent.com/nicholasDmorgan/nicholasDmorgan.github.io/main/TheHotMess.jpg" alt="RC Vehicle" class="w-full h-full object-cover" onerror="this.src='https://placehold.co/400x300/21262d/FFFFFF?text=Hot+Mess+Photo';"/>
                         </div>
                         <div class="relative pt-[56.25%] w-full overflow-hidden">
-                            <iframe 
-                                class="absolute inset-0 w-full h-full rounded-lg"
-                                src="https://www.youtube.com/embed/Fo78sLRUs3s?si=ftbkYFUjBDCFRvKq" 
-                                title="YouTube video player" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                                referrerpolicy="strict-origin-when-cross-origin" 
-                                allowfullscreen>
-                            </iframe>
+                            <iframe class="absolute inset-0 w-full h-full rounded-lg" src="https://www.youtube.com/embed/Fo78sLRUs3s?si=ftbkYFUjBDCFRvKq" frameborder="0" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -93,13 +96,10 @@
                     Linear Translation & Posture Control for a Jetpack
                 </h3>
                 <p class="text-gray-400 mb-4">
-                    Design and analysis of a control system for linear movement (translation) and stable orientation (posture) of a simplified space jetpack model.
+                    Design and analysis of a control system for linear movement and stable orientation of a simplified space jetpack model.
                 </p>
 
                 <div class="mt-6 border-t border-gh-border pt-4">
-                    <p class="text-sm text-gray-400 mb-2">
-                        View the full report detailing the control system design and analysis:
-                    </p>
                     <a href="https://nicholasDmorgan.github.io/linear%20translation%20and%20posture%20control%20for%20space%20jetpack.pdf" target="_blank" class="inline-block bg-gh-yellow text-gray-900 font-bold py-2 px-4 rounded-lg text-sm hover:bg-yellow-500 transition duration-150">
                         View Control System Report (PDF)
                     </a>
@@ -108,66 +108,105 @@
         </div>
     </section>
 
-    <!-- Hobbies & Personal Interests Section -->
+    <!-- Machining & Fabrication Section -->
     <section>
-        <h2 class="text-3xl font-semibold border-b border-gh-border pb-3 mb-6 text-gh-purple">
-            Hardware & Hands-On Hobbies
+        <h2 class="text-3xl font-semibold border-b border-gh-border pb-3 mb-6 text-gh-orange">
+            Machining & Fabrication
         </h2>
-        <div class="bg-gh-gray p-6 rounded-xl shadow-lg border border-gh-border transition duration-300 hover:border-gh-purple transform hover:scale-[1.01]">
-            <div class="flex flex-col md:flex-row gap-6 items-center">
-                <div class="w-full md:w-1/2">
+        
+        <div class="space-y-8">
+            <!-- Machined Pen Project -->
+            <div class="bg-gh-gray p-6 rounded-xl shadow-lg border border-gh-border transition duration-300 hover:border-gh-orange">
+                <div class="flex flex-col mb-6">
                     <h3 class="text-2xl font-bold mb-2 text-white flex items-center">
-                        <svg class="w-6 h-6 mr-3 text-gh-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
-                        Custom PC Building
+                        <svg class="w-6 h-6 mr-3 text-gh-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg>
+                        Manual Lathe: Custom Machined Pen
                     </h3>
                     <p class="text-gray-400">
-                        In my free time, I enjoy researching PC hardware and building custom workstations. Building PCs has given me a deep appreciation for system integration, thermal management, and meticulous assembly—skills that directly translate to my engineering work.
+                        Precision machined components featuring press-fits and decorative knurling. This project involved deep-hole drilling, external threading, and surfacing to tight tolerances.
                     </p>
-                    <div class="mt-4 flex flex-wrap gap-2">
-                        <span class="bg-gh-border text-gh-purple px-2 py-1 rounded text-xs border border-gh-purple/30">Hardware Integration</span>
-                        <span class="bg-gh-border text-gh-purple px-2 py-1 rounded text-xs border border-gh-purple/30">Cable Management</span>
-                        <span class="bg-gh-border text-gh-purple px-2 py-1 rounded text-xs border border-gh-purple/30">Thermal Optimization</span>
+                </div>
+                
+                <!-- 3 Photo Spots for Pen -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div class="photo-slot aspect-square">
+                        <img src="https://placehold.co/400x400/161b22/f0883e?text=Pen+Assembly" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="photo-slot aspect-square">
+                        <img src="https://placehold.co/400x400/161b22/f0883e?text=Lathe+Setup" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="photo-slot aspect-square">
+                        <img src="https://placehold.co/400x400/161b22/f0883e?text=Close-up+Detail" class="w-full h-full object-cover" />
                     </div>
                 </div>
-                <div class="w-full md:w-1/2">
-                    <div class="bg-black/40 p-2 rounded-lg border border-gh-border overflow-hidden">
-                        <!-- REPLACE THIS URL WITH YOUR PC PHOTO URL LATER -->
-                        <img 
-                            src="https://placehold.co/600x400/21262d/bc8cff?text=PC+Build+Photo" 
-                            alt="Custom PC Build" 
-                            class="w-full h-auto rounded shadow-2xl"
-                            onerror="this.onerror=null; this.src='https://placehold.co/600x400/21262d/FFFFFF?text=Build+Photo+Coming+Soon';"/>
+            </div>
+
+            <!-- Vice Clamp Project -->
+            <div class="bg-gh-gray p-6 rounded-xl shadow-lg border border-gh-border transition duration-300 hover:border-gh-orange">
+                <div class="flex flex-col md:flex-row gap-6 items-start">
+                    <div class="w-full md:w-1/2">
+                        <h3 class="text-2xl font-bold mb-2 text-white flex items-center">
+                            <svg class="w-6 h-6 mr-3 text-gh-orange" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 011-1h1a2 2 0 100-4H7a1 1 0 01-1-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path></svg>
+                            Mill Operation: Vice Clamp Design
+                        </h3>
+                        <p class="text-gray-400 mb-4">
+                            Assisted in designing and machining a custom vice clamp. Focused on parallel squaring, precise pocketing, and utilizing edge-finders for accurate hole patterns.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-gh-border text-gh-orange px-2 py-1 rounded text-xs border border-gh-orange/30">Vertical Milling</span>
+                            <span class="bg-gh-border text-gh-orange px-2 py-1 rounded text-xs border border-gh-orange/30">Hole Location</span>
+                        </div>
+                    </div>
+                    <!-- Single Photo Spot for Vice -->
+                    <div class="w-full md:w-1/2 photo-slot h-48">
+                        <img src="https://placehold.co/600x400/161b22/f0883e?text=Vice+Clamp+Project" class="w-full h-full object-cover" />
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section (In Progress) -->
+    <!-- Custom PC Building Section -->
+    <section>
+        <h2 class="text-3xl font-semibold border-b border-gh-border pb-3 mb-6 text-gh-purple">
+            PC Building & Hardware
+        </h2>
+        <div class="bg-gh-gray p-6 rounded-xl shadow-lg border border-gh-border transition duration-300 hover:border-gh-purple transform hover:scale-[1.01]">
+            <div class="flex flex-col md:flex-row gap-6 items-center">
+                <div class="w-full md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-2 text-white flex items-center">
+                        <svg class="w-6 h-6 mr-3 text-gh-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
+                        Performance Workstation
+                    </h3>
+                    <p class="text-gray-400">
+                        Designing systems with a focus on high-performance compute and thermal efficiency. I enjoy the process of system integration—balancing cooling paths with aesthetics and cable management.
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="bg-gh-border text-gh-purple px-2 py-1 rounded text-xs border border-gh-purple/30">Thermal Management</span>
+                        <span class="bg-gh-border text-gh-purple px-2 py-1 rounded text-xs border border-gh-purple/30">System Integration</span>
+                    </div>
+                </div>
+                <!-- PC Build Photo Spot -->
+                <div class="w-full md:w-1/2 photo-slot h-64">
+                    <img src="https://placehold.co/600x400/161b22/bc8cff?text=Featured+PC+Build" class="w-full h-full object-cover" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- In Progress Section -->
     <section>
       <h2 class="text-3xl font-semibold border-b border-gh-border pb-3 mb-6 text-gh-green">
-        Personal Projects (In Progress)
+        In Progress
       </h2>
-
       <div class="space-y-6">
         <div class="project bg-gh-gray p-6 rounded-xl shadow-lg border border-gh-border transition duration-300 hover:border-gh-blue transform hover:scale-[1.01]">
-          <h3 class="text-2xl font-bold mb-2 text-white flex items-center">
-            <svg class="w-6 h-6 mr-3 text-gh-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
-            UAV Wing Design + CFD Analysis
-          </h3>
-          <p class="text-gray-400">
-            Designing and simulating a small UAV wing to study lift and drag characteristics.
-          </p>
+          <h3 class="text-2xl font-bold mb-2 text-white">UAV Wing Design + CFD Analysis</h3>
+          <p class="text-gray-400 text-sm">Simulating lift/drag characteristics for a custom UAV airframe.</p>
         </div>
-
         <div class="project bg-gh-gray p-6 rounded-xl shadow-lg border border-gh-border transition duration-300 hover:border-gh-blue transform hover:scale-[1.01]">
-          <h3 class="text-2xl font-bold mb-2 text-white flex items-center">
-            <svg class="w-6 h-6 mr-3 text-gh-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21V3m0 18l-5-5m5 5l5-5M7 3h10a2 2 0 012 2v2h-2V5H7v2H5V5a2 2 0 012-2zM4 14h16"></path></svg>
-            Rocket Trajectory and Orbital Transfer Simulation
-          </h3>
-          <p class="text-gray-400">
-            Simulating launch path and orbital maneuvers using Python and NASA GMAT.
-          </p>
+          <h3 class="text-2xl font-bold mb-2 text-white">Rocket Trajectory Simulation</h3>
+          <p class="text-gray-400 text-sm">Python-based orbital transfer modeling using NASA GMAT.</p>
         </div>
       </div>
     </section>
@@ -175,14 +214,8 @@
     <!-- Contact Section -->
     <footer class="pt-6 border-t border-gh-border pb-12">
       <h2 class="text-3xl font-semibold mb-4 text-gh-green">Contact</h2>
-      <p class="text-lg">
-        <span class="font-medium text-white">Email:</span>
-        <a href="mailto:nichdmorgan01@gmail.com" class="text-gh-blue hover:underline">nichdmorgan01@gmail.com</a>
-      </p>
-      <p class="text-lg mt-2">
-        <span class="font-medium text-white">GitHub:</span>
-        <a href="https://github.com/nicholasDmorgan" class="text-gh-blue hover:underline">github.com/nicholasDmorgan</a>
-      </p>
+      <p class="text-lg"><span class="font-medium text-white">Email:</span> <a href="mailto:nichdmorgan01@gmail.com" class="text-gh-blue hover:underline">nichdmorgan01@gmail.com</a></p>
+      <p class="text-lg mt-2"><span class="font-medium text-white">GitHub:</span> <a href="https://github.com/nicholasDmorgan" class="text-gh-blue hover:underline">github.com/nicholasDmorgan</a></p>
     </footer>
 
   </div>
