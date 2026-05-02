@@ -24,7 +24,8 @@
             'gh-green': '#3fb950',
             'gh-gray': '#21262d',
             'gh-border': '#30363d',
-            'gh-yellow': '#e3b341', /* New color for academic section */
+            'gh-yellow': '#e3b341',
+            'gh-purple': '#bc8cff', /* Added for the personal interests section */
           }
         }
       }
@@ -43,17 +44,16 @@
       </p>
     </header>
 
-    <!-- Academic Projects Section (New Section) -->
+    <!-- Academic Projects Section -->
     <section>
         <h2 class="text-3xl font-semibold border-b border-gh-border pb-3 mb-6 text-gh-yellow">
             Academic & Design Projects
         </h2>
 
         <div class="space-y-6">
-            <!-- Project 1: RC Propeller Vehicle Structural Design Project -->
+            <!-- Project 1: RC Propeller Vehicle -->
             <div class="project bg-gh-gray p-6 rounded-xl shadow-lg border border-gh-border transition duration-300 hover:border-gh-yellow transform hover:scale-[1.01] overflow-hidden">
                 <h3 class="text-2xl font-bold mb-2 text-white flex items-center">
-                    <!-- Icon representing education/cap -->
                     <svg class="w-6 h-6 mr-3 text-gh-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a2 2 0 000-3.156L12 7l-6.16 3.422a2 2 0 000 3.156L12 17z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14v7"></path></svg>
                     Design Build Fly Drexel University MEM 425
                 </h3>
@@ -63,19 +63,14 @@
 
                 <div class="mt-6 border-t border-gh-border pt-4">
                     <h4 class="text-xl font-bold text-white mb-3">Project Visuals & Flight</h4>
-
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                        
-                        <!-- Slot 1: Single Photo (Placeholder fixed) -->
                         <div class="bg-gray-700 h-48 flex items-center justify-center rounded-lg border border-dashed border-gray-500 overflow-hidden">
                             <img 
                                 src="https://raw.githubusercontent.com/nicholasDmorgan/nicholasDmorgan.github.io/main/TheHotMess.jpg" 
-                                alt="RC Vehicle Photo Placeholder" 
+                                alt="RC Vehicle" 
                                 class="w-full h-full object-cover p-4"
                                 onerror="this.onerror=null; this.src='https://placehold.co/400x300/4F46E5/FFFFFF?text=Image+Load+Error';"/>
                         </div>
-
-                        <!-- Slot 2: Responsive Video Embed -->
                         <div class="relative pt-[56.25%] w-full overflow-hidden">
                             <iframe 
                                 class="absolute inset-0 w-full h-full rounded-lg"
@@ -91,10 +86,9 @@
                 </div>
             </div>
             
-            <!-- NEW PROJECT: Space Jetpack Control System -->
+            <!-- Project 2: Space Jetpack Control System -->
             <div class="project bg-gh-gray p-6 rounded-xl shadow-lg border border-gh-border transition duration-300 hover:border-gh-yellow transform hover:scale-[1.01] overflow-hidden">
                 <h3 class="text-2xl font-bold mb-2 text-white flex items-center">
-                    <!-- Icon representing space/rocket/jetpack -->
                     <svg class="w-6 h-6 mr-3 text-gh-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21V3m0 18l-5-5m5 5l5-5M7 3h10a2 2 0 012 2v2h-2V5H7v2H5V5a2 2 0 012-2zM4 14h16"></path></svg>
                     Linear Translation & Posture Control for a Jetpack
                 </h3>
@@ -103,21 +97,49 @@
                 </p>
 
                 <div class="mt-6 border-t border-gh-border pt-4">
-                    <!-- Button for Report -->
                     <p class="text-sm text-gray-400 mb-2">
                         View the full report detailing the control system design and analysis:
                     </p>
-                    <a href=https://nicholasDmorgan.github.io/linear%20translation%20and%20posture%20control%20for%20space%20jetpack.pdf
- target="_blank" class="inline-block bg-gh-yellow text-gray-900 font-bold py-2 px-4 rounded-lg text-sm hover:bg-yellow-500 transition duration-150" id="jetpack-report-link">
+                    <a href="https://nicholasDmorgan.github.io/linear%20translation%20and%20posture%20control%20for%20space%20jetpack.pdf" target="_blank" class="inline-block bg-gh-yellow text-gray-900 font-bold py-2 px-4 rounded-lg text-sm hover:bg-yellow-500 transition duration-150">
                         View Control System Report (PDF)
                     </a>
-                    <p class="text-xs mt-2 text-red-400">
-                        
-                    </p>
                 </div>
             </div>
-            
-            <!-- You can add more academic projects here later! -->
+        </div>
+    </section>
+
+    <!-- Hobbies & Personal Interests Section -->
+    <section>
+        <h2 class="text-3xl font-semibold border-b border-gh-border pb-3 mb-6 text-gh-purple">
+            Hardware & Hands-On Hobbies
+        </h2>
+        <div class="bg-gh-gray p-6 rounded-xl shadow-lg border border-gh-border transition duration-300 hover:border-gh-purple transform hover:scale-[1.01]">
+            <div class="flex flex-col md:flex-row gap-6 items-center">
+                <div class="w-full md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-2 text-white flex items-center">
+                        <svg class="w-6 h-6 mr-3 text-gh-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
+                        Custom PC Building
+                    </h3>
+                    <p class="text-gray-400">
+                        In my free time, I enjoy researching PC hardware and building custom workstations. Building PCs has given me a deep appreciation for system integration, thermal management, and meticulous assembly—skills that directly translate to my engineering work.
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-2">
+                        <span class="bg-gh-border text-gh-purple px-2 py-1 rounded text-xs border border-gh-purple/30">Hardware Integration</span>
+                        <span class="bg-gh-border text-gh-purple px-2 py-1 rounded text-xs border border-gh-purple/30">Cable Management</span>
+                        <span class="bg-gh-border text-gh-purple px-2 py-1 rounded text-xs border border-gh-purple/30">Thermal Optimization</span>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <div class="bg-black/40 p-2 rounded-lg border border-gh-border overflow-hidden">
+                        <!-- REPLACE THIS URL WITH YOUR PC PHOTO URL LATER -->
+                        <img 
+                            src="https://placehold.co/600x400/21262d/bc8cff?text=PC+Build+Photo" 
+                            alt="Custom PC Build" 
+                            class="w-full h-auto rounded shadow-2xl"
+                            onerror="this.onerror=null; this.src='https://placehold.co/600x400/21262d/FFFFFF?text=Build+Photo+Coming+Soon';"/>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -127,12 +149,9 @@
         Personal Projects (In Progress)
       </h2>
 
-      <!-- Project Grid -->
       <div class="space-y-6">
-        <!-- Project 1: UAV Wing Design + CFD Analysis -->
         <div class="project bg-gh-gray p-6 rounded-xl shadow-lg border border-gh-border transition duration-300 hover:border-gh-blue transform hover:scale-[1.01]">
           <h3 class="text-2xl font-bold mb-2 text-white flex items-center">
-            <!-- Icon representing design/schematics -->
             <svg class="w-6 h-6 mr-3 text-gh-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
             UAV Wing Design + CFD Analysis
           </h3>
@@ -141,10 +160,8 @@
           </p>
         </div>
 
-        <!-- Project 2: Rocket Trajectory and Orbital Transfer Simulation -->
         <div class="project bg-gh-gray p-6 rounded-xl shadow-lg border border-gh-border transition duration-300 hover:border-gh-blue transform hover:scale-[1.01]">
           <h3 class="text-2xl font-bold mb-2 text-white flex items-center">
-            <!-- Icon representing a rocket launch/trajectory -->
             <svg class="w-6 h-6 mr-3 text-gh-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21V3m0 18l-5-5m5 5l5-5M7 3h10a2 2 0 012 2v2h-2V5H7v2H5V5a2 2 0 012-2zM4 14h16"></path></svg>
             Rocket Trajectory and Orbital Transfer Simulation
           </h3>
@@ -154,8 +171,9 @@
         </div>
       </div>
     </section>
+
     <!-- Contact Section -->
-    <section class="pt-6 border-t border-gh-border">
+    <footer class="pt-6 border-t border-gh-border pb-12">
       <h2 class="text-3xl font-semibold mb-4 text-gh-green">Contact</h2>
       <p class="text-lg">
         <span class="font-medium text-white">Email:</span>
@@ -163,9 +181,9 @@
       </p>
       <p class="text-lg mt-2">
         <span class="font-medium text-white">GitHub:</span>
-        <a href="#" class="text-gh-blue hover:underline">github.com/nicholasDmorgan</a>
+        <a href="https://github.com/nicholasDmorgan" class="text-gh-blue hover:underline">github.com/nicholasDmorgan</a>
       </p>
-    </section>
+    </footer>
 
   </div>
 
